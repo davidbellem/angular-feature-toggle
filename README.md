@@ -13,4 +13,9 @@ The directive pw-feature-toggle can be used on any DOM element to make it disapp
 
 Individual features can be enabled by setting them to enabled in the data/features.json file.
 
+Scaffolding was done using yeoman.
+
+
+
+
 Enjoy.
