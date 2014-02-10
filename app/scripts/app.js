@@ -13,4 +13,7 @@ angular.module('angularFeatureToggleApp', [
       .otherwise({
         redirectTo: '/'
       });
-  }]);
+  }])
+.run(['featureToggle', function(featureToggle) {
+	featureToggle.load();
+}]);

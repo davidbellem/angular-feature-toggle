@@ -1,14 +1,13 @@
 'use strict';
 
 angular.module('angularFeatureToggleApp')
-  .directive('pwFeatureToggle', ['$compile', function ($compile) {
+  .directive('pwFeatureToggle', ['$compile', 'featureToggle', function ($compile, featureToggle) {
     return {
-      template: '<div></div>',
       restrict: 'A',
       link: function postLink(scope, element, attrs) {
-        element.text('This can be toggled');
-        console.log(attrs);
-        //console.log(FeatureToggle.isEnabled(attrs))
+        if(featureToggle.isEnabled(attrs['pwFeatureToggle']) === false) {
+        	element.remove();
+        }
       }
     };
   }]);

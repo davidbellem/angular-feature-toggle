@@ -1,5 +1,18 @@
-{
-	"feature1" {
-		"enabled" = true;
+[
+	{
+		"key": "feature1",
+		"enabled": true
+	},
+	{
+		"key": "feature2",
+		"enabled": true
+	},
+	{
+		"key": "feature3",
+		"enabled": false
+	},
+	{
+		"key": "image",
+		"enabled": true
 	}
-}
+]
