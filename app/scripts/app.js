@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('angularFeatureToggleApp', [
+angular.module('pwFeatureToggle', [
   'ngRoute'
 ])
-.constant("FEATURES_URL", "data/features.json")
+.constant('FEATURES_URL', 'data/features.json')
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/', {

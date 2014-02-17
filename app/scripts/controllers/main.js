@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('angularFeatureToggleApp')
-  .controller('MainCtrl', ['$scope', function ($scope) {
+angular.module('pwFeatureToggle')
+.controller('MainCtrl', [function () {
     
-  }]);
+}]);
